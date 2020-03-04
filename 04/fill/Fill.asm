@@ -19,3 +19,7 @@
   @addr
   M=D 
 (INPUT)
+(LOOP)
+  @KBD 
+  M=D
+  
