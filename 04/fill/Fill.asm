@@ -21,5 +21,6 @@
 (INPUT)
 (LOOP)
   @KBD 
-  M=D
+  D=M
+  
   
