@@ -26,5 +26,16 @@
   D;JEQ
   @BLACK
   0;JMP
+  (WHITE)
+  @pixel
+  M=0 // whiteout 
+  @NEXT
+  0;JMP
+  (BLACK)
+  @pixel
+  M=-1 //black out 
+  @NEXT
+  0;JMP
+
   
   
