@@ -36,6 +36,12 @@
   M=-1 //black out 
   @NEXT
   0;JMP
+  (NEXT)
+  @pixel
+  D=D+1
+  M=D 
+  
+ 
 
   
   
