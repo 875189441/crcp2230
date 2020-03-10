@@ -40,7 +40,12 @@
   @pixel
   D=D+1
   M=D 
-  
+  @KBD
+  D=D-A
+  @START
+  D;JEQ
+  @LOOP
+  0;JMP
  
 
   
