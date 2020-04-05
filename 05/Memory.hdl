@@ -27,5 +27,6 @@ CHIP Memory {
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    DMux4Way(in=load, sel=address[13..14], a=Lram1, b=Lram2, c=Lscreen, d=Lkbd);
+	Or(a=Lram1, b=Lram2, out=Lram);
 }
