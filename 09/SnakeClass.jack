@@ -1,0 +1,13 @@
+class SnakePart {
+	field int xPos; // x position
+	field int yPos; // y position
+	field int SetDirection; set up the position 
+	field int length; // size 
+
+	constructor SnakePart new(int nX, int nY, int nLength, int nDirection) {
+		let x = nX;
+		let y = nY;
+		let length = nLength;
+		let direction = nDirection;
+		
+	}
