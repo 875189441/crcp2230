@@ -15,8 +15,21 @@ CommandTypes types;
 	Parser(){}
 	void advance() {
 		
+        if (CurrentLine.find("//") != string::npos) // if only have '//'
+            CurrentLine = CurrentLine.substr(0, CurrentLine.find("//"));
+	if (line.find_first_not_of(' ') == line.npos)// if only have 'blank' 
+             getline(cin, line);
+	    //return ;
 	}
-	
+	CommandTypes commandtype()
+    {
+        if (CurrentLine.find("@") == 0)
+		return A_COMMAND;
+	if (CurrentLine.find("(") != string::npos)
+		return L_COMMAND;
+	else
+		return C_COMMAND;
+    }
     string symbol() const
     {
         if (CurrentLine.find("@") != string::npos)
@@ -135,4 +148,5 @@ public:
 int main () {
     Parser parser;
     Code code;
+    CommandTypes t;
 }
