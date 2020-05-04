@@ -1,36 +1,45 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <limits>
 using namespace std;
 enum CommandTypes {
-  A_COMMAND,
-  C_COMMAND,
-  L_COMMAND
+  A_COMMAND, C_COMMAND, L_COMMAND
+	  //dest=comp;jump
 }
 
 class Parser{
+string CurrentLine;
 string NextLine;
 CommandTypes types;
 	Parser(){}
-	void findLine() {
+	void advance() {
 		
 	}
 	
-    string symbol() 
+    string symbol() const
     {
-       
+        if (CurrentLine.find("@") != string::npos)
+            return CurrentLine.substr(1);
     }
-    string dest() 
+    string dest() const
     {
-       
+        if (CurrentLine.find("=") == string::npos) //no dest part if no =, return null 
+            return "null";
+        else
+            return CurrentLine.substr(0, line.find("="));
     }
-    string jump() 
+    string jump() const
     {
-       
+       if (CurrentLine.find(";") == string::npos) // if no found ;, return null 
+            return "null";
+        else
+            return CurrentLine.substr(line.find(";") + 1);
     }
-    string comp() 
+    string comp() const
     {
        
+	  
     }
 	
 	
