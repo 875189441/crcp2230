@@ -1,3 +1,8 @@
+// not completed
+
+
+
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -149,4 +154,8 @@ int main () {
     Parser parser;
     Code code;
     CommandTypes t;
+    parser.advance(); 
+    t = parser.commandType();
+	
+	
 }
