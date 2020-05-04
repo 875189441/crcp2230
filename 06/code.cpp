@@ -56,7 +56,7 @@ public:
 			return "0001110";
 		else if (input == "A-1")
 			return "0110010";
-		else if (in == "M-1")
+		else if (input == "M-1")
 			return "1110010";
 		else if (input == "D+A")
 			return "0000010";
