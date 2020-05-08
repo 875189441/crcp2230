@@ -1,0 +1,48 @@
+class SnakePart {
+	field int xPos; // x position
+	field int yPos; // y position
+	field int direction;
+	field int length;
+
+	constructor SnakePart new(int nX, int nY, int nLength, int nDirection) {
+		let xPos = nX;
+		let yPos = nY;
+		let length = nLength;
+		let direction = nDirection;
+		do draw();
+		return this;
+	}
+
+
+
+
+
+	method void draw() {
+
+		do Screen.drawRectangle(xPos, yPos, xPos + length, yPos + length);
+		return;
+	}
+
+
+
+
+
+
+
+
+  method int getDirection() {
+		return direction;
+	}
+
+	method int getX() {
+		return xPos;
+	}
+	method int getY() {
+		return yPos;
+	}
+
+	method void setDirection(int nDirection) {
+		let direction = nDirection;
+		return;
+	}
+}
