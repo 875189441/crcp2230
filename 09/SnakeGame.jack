@@ -1,0 +1,41 @@
+class SnakeGame(){
+
+field int Snake;
+
+
+
+
+
+
+
+
+
+method void SnakeHead() {
+    var int headX;
+    var int headY;
+    var int HeadDirection;
+    var int n;
+    let headX = 10;
+    let headY = 10;
+
+    let HeadDirection = 2;
+    let n = 0;
+    while (n < currlength) {
+      let SnakePart[n] = snakepart.new(headX + n * 2 * length, headY, length, HeadDirection);
+      let n = n + 1;
+    }
+    return;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}
